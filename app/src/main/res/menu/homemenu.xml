@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeMenuQr"
+        android:title="QR code"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_qrcode"
+
+        />
+    <item
+        android:title="Location"
+        android:id="@+id/itLocation"
+        android:icon="@drawable/baseline_location_on_24"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="My Profile"
+        android:id="@+id/homeMenuMyProfile"
+        android:icon="@drawable/homemyprofile"
+      app:showAsAction="always"
+       />
+    <item
+        android:id="@+id/homeMenuMore"
+        android:title="My Profile"
+        android:icon="@drawable/homemore"
+        app:showAsAction="always">
+<menu>
+    <item
+        android:id="@+id/homeMenuSettings"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:icon="@drawable/homesettings"
+        />
+    <item
+        android:id="@+id/homeMenuContactUs"
+        android:title="Contact us"
+        app:showAsAction="never"
+        android:icon="@drawable/icon_phone"
+        />
+    <item
+        android:id="@+id/homeMenuAboutUs"
+        android:title="About Us"
+        app:showAsAction="never"
+android:icon="@drawable/homeaboutus"
+        />
+    <item
+        android:id="@+id/homeMenuLogout"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:icon="@drawable/homelogout"
+        />
+</menu>
+    </item>
+</menu>

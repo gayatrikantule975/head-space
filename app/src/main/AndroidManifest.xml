@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/mental"
+        android:label="Head Space"
+        android:roundIcon="@drawable/mental"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HeadSpace"
+        tools:targetApi="31">
+        <activity
+            android:name=".QrCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeSlide3Slider1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeSlide2Slider1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeSlide1Slider1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BetterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".instrumentalMusicActivity"
+            android:exported="false"
+            android:theme="@style/ShowActionBar" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXKrtmMVOvzYhO9YDMYIdILpIThd8WW3w" />
+
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false"
+            android:theme="@style/ShowActionBar"/>
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/ShowActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false"
+            android:theme="@style/ShowActionBar" />
+        <activity
+            android:name=".Aftersplash"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrCodeActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30sp"
+        >
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/mental"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Head Space"
+            android:textSize="25sp"
+            android:textColor="@color/darkpink"
+            android:textStyle="bold"
+          android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvScanQr"
+        android:text="Scan Me!!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkpink"
+        android:gravity="center_horizontal"
+
+        />
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvQRCode"
+    app:cardElevation="20sp"
+    app:cardBackgroundColor="@color/pink"
+    app:cardCornerRadius="16sp"
+    android:layout_margin="16sp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<ImageView
+    android:layout_width="60sp"
+    android:layout_height="60sp"
+    android:id="@+id/ivCamera"
+    android:src="@drawable/icon_camera"
+   android:layout_gravity="center_horizontal"
+    android:tint="@color/darkpink"
+    />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLogin"
+            android:text=" Entire Login info"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/aclonica"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvYouneed"
+            android:text="You Need"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/aclonica"
+            />
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:id="@+id/ivQRimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10sp"
+            android:src="@drawable/icon_camera"
+            android:background="@drawable/qrimagebg"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Qr code"
+            android:layout_gravity="center_horizontal"
+         android:background="@drawable/shareqr"
+            android:drawableLeft="@drawable/icon_share"
+            android:drawableTint="@color/black"
+            android:layout_marginBottom="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="10sp"
+            android:drawablePadding="5sp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

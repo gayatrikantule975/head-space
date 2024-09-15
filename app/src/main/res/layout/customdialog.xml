@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    android:background="@color/darkpink"
+    android:src="@drawable/star"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HeadSpace"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkpink"
+            android:fontFamily="@font/berkshire_swash"
+            android:gravity="center_horizontal"
+            android:layout_margin="8sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to HeadSpace"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:layout_margin="8sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnWelcome"
+            android:text="thank you!!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/sky_blue"
+            android:background="@color/darkpink"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/btmHome"
+    android:title="Home"
+    android:icon="@drawable/home"
+    />
+    <item
+    android:id="@+id/moodtracckermenu"
+    android:title="Mood Tracker"
+    android:icon="@drawable/moodtracker"
+    />
+    <item
+        android:id="@+id/wellness"
+        android:title="Wellness"
+        android:icon="@drawable/mediation"
+        />
+    <item
+        android:id="@+id/music"
+        android:title="Music"
+        android:icon="@drawable/music"
+        />
+    <item
+        android:id="@+id/timer"
+        android:title="Timer"
+        android:icon="@drawable/watch"
+        />
+</menu>

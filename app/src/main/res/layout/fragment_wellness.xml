@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WellnessFragment"
+    android:orientation="horizontal"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+   <androidx.appcompat.widget.SearchView
+       android:layout_width="230sp"
+       android:layout_height="40sp"
+       android:id="@+id/svWellness"
+       android:hint="Search"
+       android:layout_margin="10sp"
+       android:background="@drawable/searchmenu"
+       />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40sp"
+        android:id="@+id/ivWellnessMic"
+        android:src="@drawable/icon_mic"
+        app:tint="@color/darkpink"
+        android:layout_marginTop="10sp"/>
+
+</LinearLayout>

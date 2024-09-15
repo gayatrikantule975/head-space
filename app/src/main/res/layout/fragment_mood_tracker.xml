@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodTrackerFragment"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMoodTracker"
+        android:text="MoodTracker"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/darkpink"
+        android:layout_margin="10sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvServices"
+        android:text="Our Services:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvMoodDiary"
+                        android:layout_width="180sp"
+                        android:layout_height="220sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="3sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="10sp"
+                        app:cardBackgroundColor="@color/akashi"
+                        app:cardCornerRadius="10sp"
+                        app:cardElevation="10sp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tvMainMood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8sp"
+                                android:text="Mood Diary"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100sp"
+                                android:src="@drawable/diary"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:id="@+id/tvSubMood"
+                                android:layout_width="180sp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8sp"
+                                android:text="Enter your mood here and get the solution to manage it"
+                                android:textSize="15sp"
+                                android:textStyle="italic"
+                                android:layout_gravity="center_horizontal"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvJournalism"
+                        android:layout_width="180sp"
+                        android:layout_height="220sp"
+                        android:layout_marginTop="3sp"
+                        android:layout_marginRight="10sp"
+                        app:cardBackgroundColor="@color/Yellow"
+                        app:cardCornerRadius="10sp"
+                        app:cardElevation="10sp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvMainJournal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8sp"
+                                android:text="@string/journalism"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100sp"
+                                android:src="@drawable/record"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:id="@+id/tvSubJournal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8sp"
+                                android:text="Record about your mood  and save here"
+                                android:textSize="15sp"
+                                android:textStyle="italic"
+                                android:layout_gravity="center_horizontal"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cvReward"
+                        app:cardBackgroundColor="@color/light_pink"
+                        app:cardElevation="10sp"
+                        app:cardCornerRadius="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="3sp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvReward"
+                                android:text="Wellness Reward "
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_margin="8sp"
+                                android:layout_gravity="center_horizontal"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="103sp"
+                                android:src="@drawable/gift"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSubReward"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Enter your wellness percentage  and get discount on other feature"
+                                android:textSize="15sp"
+                                android:textStyle="italic"
+                                android:layout_margin="8sp"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+</ScrollView>

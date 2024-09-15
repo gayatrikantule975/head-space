@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788363290177",
+    "project_id": "headspace-7ec1c",
+    "storage_bucket": "headspace-7ec1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788363290177:android:1ac9099321955ac106c8c0",
+        "android_client_info": {
+          "package_name": "com.example.farmersapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4RvT_CpJZvm9h-lti6xpOGusBvdBiUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788363290177:android:df289e21da5e4bf106c8c0",
+        "android_client_info": {
+          "package_name": "com.example.headspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs4RvT_CpJZvm9h-lti6xpOGusBvdBiUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
